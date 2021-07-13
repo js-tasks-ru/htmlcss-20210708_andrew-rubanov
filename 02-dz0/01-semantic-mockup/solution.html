@@ -1,4 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <!-- Ваше решение -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-dz0/01-semantic-mockup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        header {
+            background-color: red;
+            height: 10vh;
+        }
+        nav {
+            background-color: orange;
+            height: 10vh;
+        }
+        main {
+            background-color: green;
+            height: 60vh;
+            padding: 10px;
+        }
+        article {
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+        }
+        footer {
+            background-color: violet;
+            height: 10vh;
+        }
+        footer p {
+            font-size: 3rem;
+        }
+        nav ul, h1, p {
+            text-align: center;
+        }
+        nav li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+            margin: 0;
+            text-decoration: underline;
+        }
+        ol {
+            margin-left: 30px;
+            padding: 40px;
+        }
+        .article1 {
+            list-style: disc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="centered">Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Navigation 1</li>
+            <li>Navigation 2</li>
+            <li>Navigation 3</li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Article 1</h2>
+            <ol class="article1">
+                <li>Оригинальная трилогия</li>
+                <li>Трилогия приквелов</li>
+                <li>Трилогия сиквелов</li>
+            </ol>
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <ol class="article 2">
+                <li>Эпизод IV - Новая надежда</li>
+                <li>Эпизод V - Империя наносит ответный удар</li>
+                <li>Эпизод VI - Возвращение джедая</li>
+            </ol>
+        </article>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
 </html>
