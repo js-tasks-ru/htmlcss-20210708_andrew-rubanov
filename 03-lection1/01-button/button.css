@@ -1,1 +1,97 @@
 /* Стилизация кнопки */
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-areas: "default" "hover" "disabled";
+    grid-template-rows: repeat(3, 64px);
+    padding: 50px;
+}
+.default {
+    grid-area: default;
+}
+.hover {
+    grid-area: hover;
+}
+.disabled {
+    grid-area: disabled;
+}
+.button {
+    width: 189px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-right: 33px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+.button:hover {
+    box-shadow: 1px 1px 6px black;
+}
+.button_primary_default {
+    background: #4263EB;
+    color: #FFFFFF;
+}
+.button_secondary_default {
+    background: #7048E8;
+    color: #FFFFFF;
+}
+.button_alternate_default {
+    background: #fff;
+    border: 1px solid #ACB5BD;
+    color: #495057;
+}
+.button_primary_hover {
+    background: #2342C0;
+    color: #FFFFFF;
+}
+.button_secondary_hover {
+    background: #5028C6;
+    color: #FFFFFF;
+}
+.button_alternate_hover {
+    background: #fff;
+    border: 1px solid #212429;
+    color: #495057;
+}
+.button_primary_disabled {
+    background: #4263EB;
+    color: #FFFFFF;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.button_secondary_disabled {
+    background: #7048E8;
+    color: #FFFFFF;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.button_alternate_disabled {
+    background: #fff;
+    border: 1px solid #ACB5BD;
+    color: #c8cbcd;
+    cursor: not-allowed;
+}
+.title {
+    display: inline-block;
+    width: 189px;
+    height: 48px;
+    margin-right: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #ACB5BD;
+}
