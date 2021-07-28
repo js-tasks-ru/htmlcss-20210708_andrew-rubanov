@@ -17,6 +17,15 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+/* Палитра для 03-buttons */
+
+    --primary_default: #4263EB;
+    --secondary_default: #7048E8;
+    --primary_hover: #2342C0;
+    --secondary_hover: #5028C6;
+    --primary_disabled: #4263EB;
+    --secondary_disabled: #7048E8;
 }
 
 * {
