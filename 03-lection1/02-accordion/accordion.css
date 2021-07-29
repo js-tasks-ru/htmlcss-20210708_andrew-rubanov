@@ -14,7 +14,7 @@
 .accordion__item:last-child {
     margin-bottom: 0;
 }
-.accordion__item_header {
+.accordion__item-header {
     padding: 24px 32px 16px 32px;
     font-family: Inter;
     font-style: normal;
@@ -24,7 +24,7 @@
     color: var(--black);
     display: block;
 }
-.accordion__item_header::-webkit-details-marker {
+.accordion__item-header::-webkit-details-marker {
     display: none;
 }
 .accordion__content {
