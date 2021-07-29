@@ -1,23 +1,13 @@
 /* Стилизация кнопки */
-.container {
-    display: grid;
-    grid-template-rows: repeat(3, 48px);
-    grid-template-columns: repeat(4, 189px);
-    grid-gap: 33px 16px;
-}
 
 /* Общие стили для кнопок */
 .button_disabled {
     opacity: 0.5;
-}
-.button_primary, .button_primary_hover, .button_secondary, .button_secondary_hover {
-    color: var(--white);
-}
-.button_alternate, .button_alternate_hover {
-    color: var(--grey-4);
     cursor: not-allowed;
 }
 .button {
+    width: 189px;
+    height: 48px;
     border-radius: 8px;
     border: none;
     font-family: Roboto;
@@ -30,17 +20,21 @@
 /* Кнопки primary */
 .button_primary {
     background: var(--primary_default);
+    color: var(--white);
 }
-.button_primary_hover {
+.button_primary:hover {
     background: var(--primary_hover);
+    color: var(--white);
 }
 
 /* Кнопки secondary */
 .button_secondary {
     background: var(--secondary_default);
+    color: var(--white);
 }
-.button_secondary_hover {
+.button_secondary:hover {
     background: var(--secondary_hover);
+    color: var(--white);
 }
 
 /* Кнопки alternate */
@@ -48,8 +42,7 @@
     background: var(--white);
     border: 1px solid var(--grey-3);
 }
-.button_alternate_hover {
-    background: var(--white);
+.button_alternate:hover {
     border: 1px solid var(--black);
 }
 
