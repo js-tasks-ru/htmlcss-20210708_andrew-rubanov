@@ -14,16 +14,20 @@
 .accordion__item:last-child {
     margin-bottom: 0;
 }
-.accordion_item_header {
-    padding: 24px 540px 16px 32px;
+.accordion__item_header {
+    padding: 24px 32px 16px 32px;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
+    display: block;
 }
-.item_content {
+.accordion__item_header::-webkit-details-marker {
+    display: none;
+}
+.accordion__content {
     padding: 0 49px 16px 32px;
     margin: 0;
     font-family: Inter;
@@ -31,11 +35,5 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: #var(--grey-4);
-}
-summary {
-    display: block;
-}
-summary::-webkit-details-marker {
-    display: none;
+    color: var(--grey-4);
 }
