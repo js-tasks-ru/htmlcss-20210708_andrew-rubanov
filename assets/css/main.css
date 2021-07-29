@@ -20,5 +20,58 @@
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Стили главной страницы */
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.header {
+    
+}
+.header__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--black);
+    padding: 96px 0px 77px 160px;
+}
+.main {
+    flex-grow: 1;
+    background: #f9fafc;
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+}
+.footer {
+
+}
+.footer__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--black);
+    text-align: center;
+    padding: 71px 647px 32px 682px;
+}
+.footer__description {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black);
+    padding: 0 383px 136px 417px;
 }
