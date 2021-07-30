@@ -1,1 +1,49 @@
 /* Стилизация кнопки */
+
+/* Общие стили для кнопок */
+.button_disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.button {
+    width: 189px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    padding: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Кнопки primary */
+.button_primary {
+    background: var(--primary_default);
+    color: var(--white);
+}
+.button_primary:hover {
+    background: var(--primary_hover);
+    color: var(--white);
+}
+
+/* Кнопки secondary */
+.button_secondary {
+    background: var(--secondary_default);
+    color: var(--white);
+}
+.button_secondary:hover {
+    background: var(--secondary_hover);
+    color: var(--white);
+}
+
+/* Кнопки alternate */
+.button_alternate {
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+}
+.button_alternate:hover {
+    border: 1px solid var(--black);
+}
+
