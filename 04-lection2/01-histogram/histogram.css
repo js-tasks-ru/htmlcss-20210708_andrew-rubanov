@@ -6,10 +6,13 @@
     box-sizing: border-box;
     border-radius: 8px;
     padding: 16px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 .histogram__switch {
-    float: right;
+    position: absolute;
+    right: 24px;
     color: var(--blue-2);
 }
 .histogram__title {
@@ -21,6 +24,7 @@
     color: var(--black);
     opacity: 0.8;
     padding-bottom: 6px;
+    height: 20%;
 }
 .histogram__total {
     font-family: Inter;
@@ -29,19 +33,18 @@
     font-size: 20px;
     line-height: 26px;
     color: var(--black);
+    height: 20%;
 }
 .histogram__view {
-    position: absolute;
-    width: 299px;
-    height: 50px;
-    bottom: 24px;
+    height: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     gap: 1px;
+    flex-grow: 1;
 }
 .histogram__data {
-    height: 50px;
     flex-basis: 100%;
     background: var(--blue-2);
 }
