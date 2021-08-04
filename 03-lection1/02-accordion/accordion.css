@@ -1,1 +1,11 @@
 /* Стилизация аккордеона */
+.accordion {
+    width: 500px;
+    border: 1px solid black;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    
+}
