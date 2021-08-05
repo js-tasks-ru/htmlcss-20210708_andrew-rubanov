@@ -4,8 +4,42 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./button.css">
+        <style>
+            .container {
+                display: grid;
+                grid-template-rows: repeat(3, 48px);
+                grid-template-columns: repeat(4, 189px);
+                grid-gap: 33px 16px;
+            }
+            .title {
+                text-align: center;
+                text-transform: uppercase;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0.04em;
+                color: var(--grey-3);
+                padding-top: 15px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="container">
+                <div class="title">default</div>
+                <button class="button button_primary">Primary</button>
+                <button class="button button_secondary">Secondary</button>
+                <button class="button button_alternate">Alternate</button>
+                <div class="title">hover</div>
+                <button class="button button_primary">Primary</button>
+                <button class="button button_secondary">Secondary</button>
+                <button class="button button_alternate">Alternate</button>
+                <div class="title">disabled</div>
+                <button class="button button_primary button_disabled">Primary</button>
+                <button class="button button_secondary button_disabled">Secondary</button>
+                <button class="button button_alternate button_disabled">Alternate</button>
+        </div>
     </body>
 </html>
+ 
