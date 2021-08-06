@@ -30,15 +30,15 @@
     padding-top: 8px;
     padding-bottom: 8px;
 }
-.skeleton-title-first-row {
-    width: 172px;
+.title {
     flex-grow: 1;
     background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-5) 38.47%, var(--grey-6) 56.48%, var(--grey-7) 77.5%, var(--grey-2) 102.52%);
 }
-.skeleton-title-second-row {
-    width: 257px;
-    flex-grow: 1;
-    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-5) 38.47%, var(--grey-6) 56.48%, var(--grey-7) 77.5%, var(--grey-2) 102.52%);
+.title-second {
+    width: 59.3%;
+}
+.title-first {
+    width: 39.7%;
 }
 .skeleton__footer {
     flex-basis: 48px;
@@ -46,14 +46,4 @@
     flex-direction: column;
     gap: 8px;
     padding-top: 0;
-}
-.skeleton-footer-first-row {
-    flex-basis: 50%;
-    width: 100%;
-    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-5) 38.47%, var(--grey-6) 56.48%, var(--grey-7) 77.5%, var(--grey-2) 102.52%);
-}
-.skeleton-footer-second-row {
-    flex-basis: 50%;
-    width: 100%;
-    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-5) 38.47%, var(--grey-6) 56.48%, var(--grey-7) 77.5%, var(--grey-2) 102.52%);
 }
