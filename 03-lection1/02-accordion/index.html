@@ -4,36 +4,32 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
+        <style>
+            body {
+                margin: 50px;
+            }
+        </style>
     </head>
     <body>
         <div class="accordion">
-            <details class="item">
-                <summary>
-                    Accordion item
-                </summary>
-                <p>
-                    Hidden content
-                </p>
-            </details>
-
-            <details class="item">
-                <summary>
-                    Accordion item
-                </summary>
-                <p>
-                    Hidden content
-                </p>
-            </details>
-
-            <details class="item">
-                <summary>
-                    Accordion item
-                </summary>
-                <p>
-                    Hidden content
-                </p>
-            </details>
-
+        <details open class="accordion__item">
+            <summary class="accordion__item-header">
+                Accordion item 1
+            </summary>
+            <p class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dicta dignissimos facilis saepe doloribus reiciendis nemo nostrum debitis ipsam error distinctio ipsum et eaque porro laborum, inventore neque tempora doloremque.</p>
+        </details>
+        <details class="accordion__item">
+            <summary class="accordion__item-header">
+                Accordion item 2
+            </summary>
+            <p class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias numquam deserunt expedita corrupti, saepe eum magnam sint recusandae voluptatem repellendus commodi est libero praesentium voluptate alias modi dolorum? Totam, adipisci.</p>
+        </details>
+        <details class="accordion__item">
+            <summary class="accordion__item-header">
+                Accordion item 3
+            </summary>
+            <p class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur mollitia amet sapiente? Voluptate facere quidem, doloribus exercitationem tenetur earum repudiandae, delectus nam necessitatibus aperiam reiciendis soluta commodi natus voluptatem.</p>
+        </details>
         </div>
     </body>
 </html>
