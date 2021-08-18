@@ -1,8 +1,7 @@
 .calendar {
     width: 100%;
     max-width: 300px;
-    border: 1px solid black;
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
@@ -16,7 +15,7 @@
     line-height: 24px;
     display: flex;
     justify-content: center;
-    color: #334D6E;
+    color: var(--grey-9);
     padding-bottom: 24px;
 }
 .calendar__wrapper {
@@ -52,10 +51,10 @@
     line-height: 20px;
     color: var(--grey-9);
 }
-.item-startend {
+.calendar__item_startend {
     background: var(--blue-2);
     color: var(--white);
 }
-.item-between {
+.calendar__item_between {
     background: var(--blue-4);
 }
