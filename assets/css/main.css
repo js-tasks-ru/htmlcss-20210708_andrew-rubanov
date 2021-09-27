@@ -2,7 +2,7 @@
 
 :root {
     --white: #ffffff;
-    --black: #212429;
+    --black: rgb(33, 36, 41);
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #374FC7;
@@ -40,15 +40,33 @@
 * {
     font-family: 'Inter', 'Roboto', sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* Стили главной страницы */
 
-html, body {
-    height: 100%;
-}
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 100%;
+}
+.wrapper__header {
+    width: 100%;
+    flex-basis: 237px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper__content {
+    background: #f9fafc;
+    width: 100%;
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+    display: flex;
+    justify-content: center;
+}
+.wrapper__footer {
+    width: 100%;
+    flex-basis: 383px;
+    display: flex;
+    justify-content: center;
 }
