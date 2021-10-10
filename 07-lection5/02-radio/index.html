@@ -4,8 +4,40 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style>
+            body {margin: 3em;}
+            h2 {line-height: 3em;}
+            .container {display: flex; flex-direction: column; gap: 1em;}
+        </style>
     </head>
     <body>
+        <h2>RADIOBUTTONS</h2>
+        <div class="container">
 
+            <label class="rb">
+                <input class="rb__input" type="radio" name="radio" value="first">
+                <span class="rb__custom"></span>
+                <span class="rb__label">first</span>
+            </label>
+
+            <label class="rb">
+                <input class="rb__input" type="radio" name="radio" value="second" checked>
+                <span class="rb__custom"></span>
+                <span class="rb__label">second</span>
+            </label>
+            
+            <label class="rb">
+                <input class="rb__input" type="radio" name="radio" value="third">
+                <span class="rb__custom"></span>
+                <span class="rb__label">third</span>
+            </label>
+
+            <label class="rb">
+                <input class="rb__input" type="radio" name="radio" value="fourth" disabled>
+                <span class="rb__custom"></span>
+                <span class="rb__label">fourth</span>
+            </label>
+            
+        </div>
     </body>
 </html>
