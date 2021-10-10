@@ -1,5 +1,9 @@
+.cb {
+    position: relative;
+}
+
 /* Подпись к чекбоксу */
-.checkbox__label {
+.cb__label {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -11,7 +15,7 @@
 }
 
 /* Убираю заводской чекбокс */
-.checkbox:checked, .checkbox:not(:checked) {
+.cb__input:checked, .cb__input:not(:checked) {
     position: absolute;
     appearance: none;
     -webkit-appearance: none;
@@ -19,7 +23,7 @@
 }
 
 /* DEFAULT */
-.checkbox__custom {
+.cb__custom {
     position: absolute;
     /* margin-left: -3em; */
     width: 28px;
@@ -35,30 +39,30 @@
 
 
 /* DEFAULT CHECKED */
-.checkbox:checked + .checkbox__custom {
+.cb__input:checked + .cb__custom {
     background-color: var(--blue);
     background-image: url('data:image/svg+xml,%3Csvg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
     border: none;
 }
 
 /* DISABLED UNCHECKED */
-.checkbox:disabled + .checkbox__custom {
+.cb__input:disabled + .cb__custom {
     background-color: var(--grey-2);
     background-image: none;
 }
 
 /* DISABLED CHECKED */
-.checkbox:checked:disabled + .checkbox__custom {
+.cb__input:checked:disabled + .cb__custom {
     background-color: var(--grey-2);
     background-image: url('data:image/svg+xml,%3Csvg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
 }
 
 /* ON FOCUS CHECKBOX */
-.checkbox:focus + .checkbox__custom {
+.cb__input:focus + .cb__custom {
     box-shadow: 0 0 0 0.15em var(--purple);
 }
 
 /* ON FOCUS LABEL FOR CHECKBOX */
-.checkbox:focus ~ .checkbox__label {
+.cb__input:focus ~ .cb__label {
     text-decoration: underline;
 }
