@@ -4,8 +4,40 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+        <style>
+            body {height: 100%;margin: 2em;}
+            h2 {line-height: 2em;}
+            .container {display: flex;flex-direction: column;gap: 16px;}
+        </style>
     </head>
     <body>
+        <h2>CHECKBOXES</h2>
+        <div class="container">
+            
+            <label class="cb">
+                <input class="cb__input" type="checkbox">
+                <span class="cb__custom"></span>
+                <span class="cb__label">Unchecked</span>
+            </label>
 
+            <label class="cb">
+                <input class="cb__input" type="checkbox" checked>
+                <span class="cb__custom"></span>
+                <span class="cb__label">Checked</span>
+            </label>
+            
+            <label class="cb">
+                <input class="cb__input" type="checkbox" disabled>
+                <span class="cb__custom"></span>
+                <span class="cb__label">Disabled uncheked</span>
+            </label>
+
+            <label class="cb">
+                <input class="cb__input" type="checkbox" checked disabled>
+                <span class="cb__custom"></span>
+                <span class="cb__label">Disabled checked</span>
+            </label>
+
+        </div>
     </body>
 </html>
