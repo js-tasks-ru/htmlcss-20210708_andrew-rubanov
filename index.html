@@ -2,22 +2,90 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./components/header/header.css">
+        <link rel="stylesheet" href="./components/main/content.css">
+        <link rel="stylesheet" href="./components/footer/footer.css">
+        <link rel="stylesheet" href="./components/main/cards.css">
     </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <h1 class="header__title">Reusable component library</h1>
+    <body class="wrapper">
+
+            <header class="wrapper__header">
+                <div class="header">
+                    <div class="header__nav">
+                        <svg class="header__burger" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="sprites.svg#icon-menu"></use>
+                        </svg>
+                        <svg class="header__logotype" width="110" height="32" viewBox="0 0 110 32">
+                            <use xlink:href="sprites.svg#icon-logo"></use>
+                        </svg>
+                        <ul class="header__menu">
+                            <li class="header__menu-item header__menu-item-active">Components</li>
+                            <li class="header__menu-item">About</li>
+                            <li class="header__menu-item">Contacts</li>
+                            <li class="header__menu-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="options__item-active">
+                                    <use xlink:href="sprites.svg#icon-sun"></use>
+                                </svg>
+                                <!-- сюда вставить компонент переключателя цветовой темы -->
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <use xlink:href="sprites.svg#icon-moon"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="header__title">Reusable component library</h1>
+                </div>
             </header>
 
-            <main class="main">
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repudiandae fuga quis eum a similique impedit culpa modi labore repellendus. Dolor temporibus fugiat alias, animi unde sapiente facilis corrupti quasi!</span>
+            <main class="wrapper__content">
+                <div class="content">
+                    <ul class="content__tabs">
+                        <li class="tabs__item tabs__item-active">All components</li>
+                        <li class="tabs__item">Elements</li>
+                        <li class="tabs__item">Containers</li>
+                        <li class="tabs__item">Templates</li>
+                    </ul>
+                    <div class="card">
+                        <div class="card__preview">ЗАГЛУШКА-ТЕКСТ</div>
+                        <h3 class="card__title">Tooltip</h3>
+                        <p class="card__description">Element description</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__preview">ЗАГЛУШКА-ТЕКСТ</div>
+                        <h3 class="card__title">Custom form elements</h3>
+                        <p class="card__description">Element description</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__preview">ЗАГЛУШКА-ТЕКСТ</div>
+                        <h3 class="card__title">Calendar</h3>
+                        <p class="card__description">Element description</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__preview">ЗАГЛУШКА-ТЕКСТ</div>
+                        <h3 class="card__title">Modal dialog</h3>
+                        <p class="card__description">Element description</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__preview">ЗАГЛУШКА-ТЕКСТ</div>
+                        <h3 class="card__title">Histogram</h3>
+                        <p class="card__description">Element description</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__preview">ЗАГЛУШКА-ТЕКСТ</div>
+                        <h3 class="card__title">Avatar</h3>
+                        <p class="card__description">Element description</p>
+                    </div>
+                </div>
             </main>
-
-            <footer class="footer">
-                <h2 class="footer__title">About</h2>
-                <p class="footer__description">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+ 
+            <footer class="wrapper__footer">
+                <div class="footer">
+                    <h2 class="footer__title">About</h2>
+                    <p class="footer__description">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+                </div>
             </footer>
-        </div>
+
     </body>
 </html>
