@@ -19,6 +19,7 @@
     --grey-7: #E3E7EA;
     --grey-8: #c4c4c4;
     --grey-9: #334D6E;
+    --bg-content: #f9fafc;
 
 
     --error: var(--red);
@@ -57,7 +58,7 @@
     justify-content: center;
 }
 .wrapper__content {
-    background: #f9fafc;
+    background: var(--bg-content);
     width: 100%;
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);

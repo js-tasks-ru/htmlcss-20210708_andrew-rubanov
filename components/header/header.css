@@ -7,26 +7,23 @@
     padding-bottom: 0px;
     padding-left: 16px;
 }
-.header__menu {
+.header__burger {
     display: none;
 }
-.header__logo {
+.header__nav {
     max-width: 1100px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
 }
-.logo__options {
+.header__menu {
     align-self: flex-end;
     margin-left: auto;
-}
-.options {
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
-.options__item {
+.header__menu-item {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -36,7 +33,7 @@
     color: var(--grey-3);
     align-self: center;
 }
-.options__item-active {
+.header__menu-item-active {
     color: var(--black);
 }
 .header__title {
@@ -46,59 +43,10 @@
     font-size: 50px;
     line-height: 64px;
     color: var(--black);
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
-.options__checkbox input {
-    display: none;
-}
-.options__checkbox {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    width: 52px;
-    height: 28px;
-    border: 1px solid var(--grey-3);
-    box-sizing: border-box;
-    border-radius: 16px;
-}
-.checkbox__slider:before {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: var(--grey-3);
-    transition: 0.3s;
-}
-input:checked + .checkbox__slider:before {
-    transform: translateX(24px);
-}
-.header__tabs {
-    padding-inline-start: 0px;
-    list-style-type: none;
-}
-.tabs__item {
-    display: inline;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--grey-3);
-    padding-bottom: 8px;
-}
-.tabs__item:not(:first-child) {
-    margin-left: 40px;
-}
-.tabs__item-active {
-    color: var(--black);
-    border-bottom: 5px solid var(--black);
-}
-
 @media screen and (max-width: 592px) {
-    .options {
+    .header__menu {
         display: none;
     }
     .header {
@@ -113,13 +61,13 @@ input:checked + .checkbox__slider:before {
         font-size: 28px;
         line-height: 38px;
         color: var(--black);
-        margin-bottom: 32px;
+        margin-top: 40px;
     }
     .header__logotype {
         width: 100%;
         margin: 0 auto;
     }
-    .header__menu {
+    .header__burger {
         display: block;
     }
     

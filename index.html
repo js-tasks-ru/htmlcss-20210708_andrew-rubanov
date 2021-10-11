@@ -13,48 +13,40 @@
 
             <header class="wrapper__header">
                 <div class="header">
-                    <div class="header__logo">
-                        <svg class="header__menu" width="24" height="24" viewBox="0 0 24 24">
+                    <div class="header__nav">
+                        <svg class="header__burger" width="24" height="24" viewBox="0 0 24 24">
                             <use xlink:href="sprites.svg#icon-menu"></use>
                         </svg>
                         <svg class="header__logotype" width="110" height="32" viewBox="0 0 110 32">
                             <use xlink:href="sprites.svg#icon-logo"></use>
                         </svg>
-                        <div class="logo__options">
-                            <ul class="options">
-                                <li class="options__item options__item-active">Components</li>
-                                <li class="options__item">About</li>
-                                <li class="options__item">Contacts</li>
-                                <li class="options__item">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" class="options__item-active">
-                                        <use xlink:href="sprites.svg#icon-sun"></use>
-                                    </svg>
-                                    <label class="options__checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkbox__slider"></span>
-                                    </label>
-                                    <svg width="24" height="24" viewBox="0 0 24 24">
-                                        <use xlink:href="sprites.svg#icon-moon"></use>
-                                    </svg>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h1 class="header__title">Reusable component library</h1>
-                    <div>
-                        <ul class="header__tabs">
-                            <li class="tabs__item tabs__item-active">All components</li>
-                            <li class="tabs__item">Elements</li>
-                            <li class="tabs__item">Containers</li>
-                            <li class="tabs__item">Templates</li>
+                        <ul class="header__menu">
+                            <li class="header__menu-item header__menu-item-active">Components</li>
+                            <li class="header__menu-item">About</li>
+                            <li class="header__menu-item">Contacts</li>
+                            <li class="header__menu-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="options__item-active">
+                                    <use xlink:href="sprites.svg#icon-sun"></use>
+                                </svg>
+                                <!-- сюда вставить компонент переключателя цветовой темы -->
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <use xlink:href="sprites.svg#icon-moon"></use>
+                                </svg>
+                            </li>
                         </ul>
                     </div>
+                    <h1 class="header__title">Reusable component library</h1>
                 </div>
             </header>
 
             <main class="wrapper__content">
                 <div class="content">
+                    <ul class="content__tabs">
+                        <li class="tabs__item tabs__item-active">All components</li>
+                        <li class="tabs__item">Elements</li>
+                        <li class="tabs__item">Containers</li>
+                        <li class="tabs__item">Templates</li>
+                    </ul>
                     <div class="card">
                         <div class="card__preview">ЗАГЛУШКА-ТЕКСТ</div>
                         <h3 class="card__title">Tooltip</h3>
