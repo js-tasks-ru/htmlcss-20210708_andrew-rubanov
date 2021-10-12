@@ -1,21 +1,21 @@
 /* Оболочка переключателя */
 .toggle {
+    display: inline-flex;
+    align-items: center;
     position: relative;
-    display: inline-block;
 }
 /* Убираю штатный чекбокс */
-.toggle__input:checked, .toggle__input:not(:checked) {
+.toggle__input {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    outline: none;
+    clip: rect(0 0 0 0);
 }
 /* Оболочка кастомного переключателя в состоянии not checked*/
 .toggle__case {
-    position: absolute;
+    position: relative;
     width: 52px;
     height: 28px;
     background-color: var(--white);
@@ -29,8 +29,6 @@
 .toggle__input:checked ~ .toggle__case {
     background-color: var(--blue);
     border: 1px solid var(--blue);
-    box-sizing: border-box;
-    border-radius: 16px;
 }
 /* Оболочка кастомного переключателя в состоянии disabled*/
 .toggle__input:disabled ~ .toggle__case {
@@ -59,7 +57,7 @@
 }
 /* Подпись к переключателю во всех состояниях*/
 .toggle__label {
-    margin-left: 4em;
+    margin-left: 12px;
     line-height: 28px;
     font-family: Inter;
     font-style: normal;
