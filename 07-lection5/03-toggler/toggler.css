@@ -41,18 +41,18 @@
     height: 24px;
     background-color: var(--grey-2);
     border-radius: 16px;
-    top: 2px;
-    margin-left: 2px;
+    top: 1px;
+    margin-left: 1px;
     transition: all 0.2s ease;
     cursor: pointer;
 }
 /* Кастомный рычажок переключателя в состоянии checked*/
-.toggle__input:checked ~ .toggle__arm {
+.toggle__input:checked ~ * .toggle__arm {
     background-color: var(--white);
     margin-left: 26px;
 }
 /* Кастомный рычажок переключателя в состоянии disabled*/
-.toggle__input:disabled ~ .toggle__arm {
+.toggle__input:disabled ~ * .toggle__arm {
     background-color: var(--grey-3);
 }
 /* Подпись к переключателю во всех состояниях*/
