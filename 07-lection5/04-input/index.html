@@ -4,8 +4,23 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <style>
+            body {height: 100%;margin: 2em;}
+            h2 {line-height: 2em;}
+            .container {display: flex;flex-direction: column;gap: 16px; width: 370px;}
+        </style>
     </head>
     <body>
+        <div class="container">
+            <h2>INPUT TEXT</h2>
 
+            <form class="text">
+                <input type="text" class="text__input" placeholder="Label">
+                <input type="text" class="text__input" placeholder="Focus">
+                <input type="text" class="text__input text__input-success" placeholder="Success">
+                <input type="text" class="text__input text__input-error" placeholder="Error">
+            </form>
+
+        </div>
     </body>
 </html>

@@ -20,6 +20,7 @@
     --grey-8: #c4c4c4;
     --grey-9: #334D6E;
     --bg-content: #f9fafc;
+    --inp-shadow: rgba(51, 154, 240, 0.1);
 
 
     --error: var(--red);
